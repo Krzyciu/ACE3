@@ -6,3 +6,25 @@
     true,
     true
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(damagePassThroughEffect),
+    "SLIDER",
+    [LSTRING(damagePassThroughEffect_displayName), LSTRING(damagePassThroughEffect_description)],
+    ELSTRING(medical,Category),
+    [0, 1, 1, 2, true],
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QEGVAR(medical,considerSelectAIPlayersForMedical),
+    "LIST",
+    [LSTRING(ConsiderSelectAIPlayersForMedical_DisplayName), LSTRING(ConsiderSelectAIPlayersForMedical_Description)],
+    ELSTRING(medical,Category),
+    [
+        [0,1,2],
+        [ELSTRING(common,Disabled), LSTRING(AllPlayables), LSTRING(AllPlayerSquadmates)],
+        0
+    ],
+    true
+] call CBA_fnc_addSetting;

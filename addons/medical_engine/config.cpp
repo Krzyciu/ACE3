@@ -28,5 +28,6 @@ class CfgPatches {
 #include "CfgFunctions.hpp"
 #include "CfgMoves.hpp"
 #include "CfgVehicles.hpp"
+#include "Cfg3DEN.hpp"
 
 #endif
