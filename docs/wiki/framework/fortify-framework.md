@@ -30,7 +30,7 @@ If the Fortify module is present in the mission, server admins can use chat comm
 
 ### 1.2 Adding custom presets
 
-There are three ways of adding custom presets to your mission, either via code, through desciption.ext or through config.
+There are three ways of adding custom presets to your mission, either via code, through description.ext or through config.
 
 To add a preset via code you use the function `call ace_fortify_fnc_registerObjects`. Also enables Fortify.
 
@@ -108,7 +108,12 @@ The Fortify budget can be updated for any side using the function.
 * [west, -250, false] call ace_fortify_fnc_updateBudget
 ```
 
-### 1.5 Limiting build locations
+### 1.5 Tokens
+
+Fortify budget can be distributed to individual units as a physical item. 
+Each `ACE_FortifyToken` item grants the equivalent of $5.
+
+### 1.6 Limiting build locations
 
 Fortify can be limited to on specific areas.
 Push locations to `ace_fortify_locations`.
